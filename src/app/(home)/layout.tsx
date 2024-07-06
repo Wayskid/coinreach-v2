@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import Nav from "../nav";
 import Footer from "../footer";
 
-export default function layout({ children }: { children: ReactNode }) {
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="h-full">
       <Nav />

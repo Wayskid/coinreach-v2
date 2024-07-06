@@ -3,7 +3,7 @@ import { assessmentStore } from "@/zustand/store/store";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-export default function layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   const { protocol } = assessmentStore((state) => state);
   const [layoutWidth, setLayoutWidth] = useState(17);
 

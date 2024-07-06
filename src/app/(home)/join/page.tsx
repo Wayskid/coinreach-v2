@@ -31,10 +31,10 @@ export default function Page() {
     <div className="">
       <p className="text-2xl">Please fill in your information</p>
       <p className="text-sm mt-3">
-        At CoinReach, we prioritize the privacy and security of our users' data.
+        {`At CoinReach, we prioritize the privacy and security of our users' data.
         We understand that your personal information is valuable and sensitive,
         and we are committed to protecting it with the highest level of care.
-        All fields are required.
+        All fields are required.`}
       </p>
       <form
         onSubmit={handleSubmit}
