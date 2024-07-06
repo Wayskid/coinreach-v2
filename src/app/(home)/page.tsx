@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <main className="grid h-full gap-16">
-      <section className="h-[calc(100vh-70px)] md:h-[45rem] relative bg-[#1e2b31] grid">
+      <section className="h-[calc(100vh-70px)] relative bg-[#1e2b31] grid">
         <Image
           src="https://res.cloudinary.com/diiohnshc/image/upload/v1719266978/CoinReach/magnet-me-315vPGsAFUk-unsplash_srxu77.jpg"
           width="0"
@@ -36,7 +36,7 @@ export default function Home() {
           alt="hero-bg"
           className="w-full h-full absolute object-cover blur-[1.8px] opacity-95"
         />
-        <div className="w-[min(92rem,100%)] mx-auto px-4 md:px-12 lg:px-32 pt-16 pb-0 grid gap-12 z-20 place-self-center">
+        <div className="w-[min(92rem,100%)] mx-auto px-4 md:px-12 lg:px-32 grid gap-12 z-20 place-self-center">
           <p className="text-3xl md:text-5xl text-center font-semibold text-white">
             <span className="text-[#F9CC0B]">CoinReach:</span> Empowering your
             financial freedom and bridging the gap to crypto technology for a
