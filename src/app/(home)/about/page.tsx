@@ -78,9 +78,9 @@ export default function Page() {
                 className="rounded-md aspect-square object-cover"
               />
               <p className="text-sm font-light">
-                "I've been working with CoinReach for months now and I must
+                &quot;I've been working with CoinReach for months now and I must
                 confess, it was confusing at first, but in no time I became an
-                expert, and actually no longer needed my assigned Agent."
+                expert, and actually no longer needed my assigned Agent.&quot;
               </p>
             </div>
             <div className="p-7 grid justify-items-center text-center shadow-lg gap-3">
@@ -92,9 +92,9 @@ export default function Page() {
                 className="rounded-md aspect-square object-cover"
               />
               <p className="text-sm font-light">
-                "I am loving it here so much I had to make a few friends apply,
-                because I know how much they struggle financially. They've been
-                very grateful."
+                &quot; I am loving it here so much I had to make a few friends
+                apply, because I know how much they struggle financially.
+                They've been very grateful.&quot;
               </p>
             </div>
             <div className="p-7 grid justify-items-center text-center shadow-lg gap-3">
@@ -106,9 +106,9 @@ export default function Page() {
                 className="rounded-md aspect-square object-cover"
               />
               <p className="text-sm font-light">
-                "Retired with a lot of free time. I was very unsure about
+                &quot;Retired with a lot of free time. I was very unsure about
                 filling out the application form because of my age. Like, will I
-                be able to execute tasks? Well I'm now really good!"
+                be able to execute tasks? Well I'm now really good!&quot;
               </p>
             </div>
           </div>
