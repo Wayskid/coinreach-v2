@@ -27,12 +27,16 @@ export default function Page() {
     if (Object.values(contactVal).every((val) => val.length > 0)) {
       emailjs
         .send(
-          "service_ghlo75w",
-          "template_5a1y7ep",
+          process.env.NEXT_PUBLIC_serviceId
+            ? process.env.NEXT_PUBLIC_serviceId
+            : "",
+          process.env.NEXT_PUBLIC_templateId
+            ? process.env.NEXT_PUBLIC_templateId
+            : "",
           {
             ...contactVal,
           },
-          "GS9cjuP3bn-M_b_R5"
+          process.env.NEXT_PUBLIC_publicId
         )
         .then(
           (result) => {
