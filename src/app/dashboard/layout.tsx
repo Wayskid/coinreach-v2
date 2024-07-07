@@ -28,8 +28,6 @@ export default function Layout({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setLoaded(true);
-    router.refresh();
-    console.log(loaded, userInfo);
   }, []);
 
   return (

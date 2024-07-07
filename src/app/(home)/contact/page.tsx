@@ -66,9 +66,9 @@ export default function Page() {
         <div className="">
           <p className="text-3xl">Contact us</p>
           <p className="mt-2">
-            Uncertain about your needs? Don't worry! The CoinReach team is here
+            {`Uncertain about your needs? Don't worry! The CoinReach team is here
             to listen and offer expert guidance, providing personalized support
-            to help you find what you're looking for.
+            to help you find what you're looking for.`}
           </p>
           <div className="grid gap-2 mt-4">
             <div className="flex items-center gap-2">
@@ -83,7 +83,7 @@ export default function Page() {
         </div>
         <div className="bg-[#1e2b31] rounded-sm text-white p-7">
           <p className="text-2xl">
-            Inquire Today: <br /> Let's explore how we can help
+            Inquire Today: <br /> {`Let's explore how we can help`}
           </p>
           <form className="pt-5 grid" onSubmit={handleContactUs}>
             <div className="space-y-5 grid justify-items-center">

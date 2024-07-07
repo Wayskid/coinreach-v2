@@ -7,10 +7,10 @@ export default function Page() {
         <p className="text-3xl mb-1">Privacy Policy</p>
         <div className="space-y-5">
           <p className="">
-            CoinReach (the "Company") is committed to protecting the privacy of
+            {`CoinReach (the "Company") is committed to protecting the privacy of
             its remote workers, clients, and agents (collectively, "Users").
             This Privacy Policy explains how the Company collects, uses,
-            discloses, and protects User information.
+            discloses, and protects User information.`}
           </p>
           <div className="space-y-5 *:space-y-1">
             <div className="space-y-1">

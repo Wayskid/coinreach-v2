@@ -93,10 +93,10 @@ export default function Page() {
             <div className="space-y-1">
               <p className="font-semibold">Confidentiality and Security</p>
               <p className="">
-                Workers must maintain confidentiality and security of client
+                {`Workers must maintain confidentiality and security of client
                 information and transactions. Workers must also comply with the
                 Company's data protection policies and procedures, which may
-                include:
+                include:`}
               </p>
               <ul className="*:list-item *:list-inside *:list-disc space-y-2">
                 <li>Encrypting sensitive data</li>

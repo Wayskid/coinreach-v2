@@ -47,13 +47,13 @@ export default function Page() {
         <div className="w-[min(92rem,100%)] mx-auto px-4 md:px-12 lg:px-32 py-20 grid">
           <p className="text-3xl font-medium mb-5">Our Values</p>
           <p className="">
-            We embrace cutting-edge technology and continuously seek new ways to
+            {`We embrace cutting-edge technology and continuously seek new ways to
             improve our services. We prioritize the safety and security of our
             users' assets and information, and adhere to all applicable laws and
             regulations to ensure a secure and trustworthy environment. We put
             our users first, providing personalized support and tailored
             solutions, and believe in open communication, clear policies, and
-            fair practices.
+            fair practices.`}
           </p>
         </div>
       </section>
