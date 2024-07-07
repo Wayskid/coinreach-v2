@@ -13,8 +13,8 @@ import { BiMenu } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
 
 export default function Layout({ children }: { children: ReactNode }) {
-  const router = useRouter();
   const pathname = usePathname();
+  const router = useRouter();
   const { userInfo, setUserInfo, setToken } = useContext(AuthContext);
   const [loaded, setLoaded] = useState(false);
   const [showAside, setShowAside] = useState(false);
@@ -28,11 +28,13 @@ export default function Layout({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setLoaded(true);
+    router.refresh();
+    console.log(loaded, userInfo);
   }, []);
 
   return (
-    userInfo.first_name &&
-    loaded && (
+    loaded &&
+    userInfo.first_name?.length > 0 && (
       <div className="bg-[#1e2b31] grid md:grid-cols-[auto,1fr] h-full md:p-5 gap-5">
         <div
           className={`bg-white rounded-sm p-5 flex-col absolute z-10 w-full h-full md:h-[unset] md:[position:unset] transition-opacity ${
@@ -120,7 +122,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                     RemoveCookie("Token");
                     setUserInfo((prev) => prev);
                     setToken("");
-                    // router.push("/");
+                    router.push("/login");
                   })
                 }
                 className="text-center font-medium"

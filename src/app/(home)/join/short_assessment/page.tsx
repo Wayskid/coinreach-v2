@@ -9,9 +9,8 @@ import { useRouter } from "next/navigation";
 
 export default function Page() {
   const router = useRouter();
-  const { assessments, formVals, setUserScore, setProtocol } = assessmentStore(
-    (state) => state
-  );
+  const { assessments, formVals, setUserScore, setProtocol, clearAssessment } =
+    assessmentStore((state) => state);
   const [isLoading, setIsLoading] = useState(false);
 
   async function handleSubmitApplication() {
@@ -31,12 +30,10 @@ export default function Page() {
       };
 
       try {
-        await addDoc(
-          collection(db, "Application Forms"),
-          applicationForm
-        );
+        await addDoc(collection(db, "Application Forms"), applicationForm);
         setIsLoading(false);
         setProtocol("success");
+        clearAssessment();
         router.push("/join/form_success");
       } catch (e) {
         setIsLoading(false);

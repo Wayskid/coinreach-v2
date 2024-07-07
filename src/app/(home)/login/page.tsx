@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useContext, useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "@/firebase/firebase";
 import { useRouter } from "next/navigation";
@@ -12,6 +12,7 @@ export default function Page() {
   const router = useRouter();
   const [loginVal, setLoginVal] = useState({ email: "", password: "" });
   const [isLoading, setIsLoading] = useState(false);
+  const { setToken, setUserInfo } = useContext(AuthContext);
 
   function handleLogin(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -35,6 +36,14 @@ export default function Page() {
             true
           );
           SetCookie("Token", JSON.stringify(user.uid), true);
+          setUserInfo({
+            avatar,
+            email,
+            first_name,
+            last_name,
+            work_email,
+          });
+          setToken(user.uid);
           router.push("/dashboard");
         });
       })

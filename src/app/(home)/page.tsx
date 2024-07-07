@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiDollar, BiRocket } from "react-icons/bi";
 import { BsCurrencyBitcoin } from "react-icons/bs";
-import { PiPlus, PiPlusThin } from "react-icons/pi";
+import { PiPlus } from "react-icons/pi";
 import { TbBrandWechat } from "react-icons/tb";
 
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
             more connected world.
           </p>
           <Link
-            href="join/your_info"
+            href="join"
             className="bg-[#F9CC0B] justify-self-center p-5 mt-10 font-medium"
           >
             Join us today
@@ -85,7 +85,43 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-20">
+      {/* <section className="bg-[#1e2b31] text-white py-5 grid">
+        <div className="w-[min(92rem,100%)] mx-auto px-4 md:px-12 lg:px-32 grid grid-cols-2 md:grid-cols-4 gap-10 justify-items-center">
+          <Image
+            src="https://res.cloudinary.com/diiohnshc/image/upload/v1720372497/CoinReach/Coinbase_Wordmark_White_glphs8.png"
+            width="0"
+            height="0"
+            sizes="100vw"
+            alt="hero-bg"
+            className="w-[8rem] h-full object-contain"
+          />
+          <Image
+            src="https://res.cloudinary.com/diiohnshc/image/upload/v1720372641/CoinReach/RGB_CashApp_Logo_Primary_White_rltjnr.png"
+            width="0"
+            height="0"
+            sizes="100vw"
+            alt="hero-bg"
+            className="w-[8rem] h-full object-contain"
+          />
+          <Image
+            src="https://res.cloudinary.com/diiohnshc/image/upload/v1720372497/CoinReach/Coinbase_Wordmark_White_glphs8.png"
+            width="0"
+            height="0"
+            sizes="100vw"
+            alt="hero-bg"
+            className="w-[8rem] h-full object-contain"
+          />
+          <Image
+            src="https://res.cloudinary.com/diiohnshc/image/upload/v1720372497/CoinReach/Coinbase_Wordmark_White_glphs8.png"
+            width="0"
+            height="0"
+            sizes="100vw"
+            alt="hero-bg"
+            className="w-[8rem] h-full object-contain"
+          />
+        </div>
+      </section> */}
+      <section className="py-10">
         <div className="w-[min(92rem,100%)] mx-auto px-4 md:px-12 lg:px-32">
           <p className="text-3xl text-center mb-5">Testimonies</p>
           <div className="grid gap-5 sm:grid-cols-3">

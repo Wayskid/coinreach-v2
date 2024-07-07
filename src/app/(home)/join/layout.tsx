@@ -28,6 +28,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   ? "after:bg-[#F9CC0B] font-medium"
                   : "after:bg-[#f3f3f3] opacity-60"
               } after:absolute after:-bottom-[5.5px] after:justify-self-center`}
+              style={{ pointerEvents: protocol.your_info ? "auto" : "none" }}
               href="/join"
             >
               Your info
@@ -38,6 +39,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   ? "after:bg-[#F9CC0B] font-medium"
                   : "after:bg-[#f3f3f3] opacity-60"
               } after:absolute after:-bottom-[5.5px] after:justify-self-center`}
+              style={{ pointerEvents: protocol.assessment ? "auto" : "none" }}
               href="/join/short_assessment"
             >
               Assessment
@@ -48,6 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   ? "after:bg-[#F9CC0B] font-medium"
                   : "after:bg-[#f3f3f3] opacity-60"
               } after:absolute after:-bottom-[5.5px] after:justify-self-center`}
+              style={{ pointerEvents: protocol.success ? "auto" : "none" }}
               href="/join/form_success"
             >
               Success

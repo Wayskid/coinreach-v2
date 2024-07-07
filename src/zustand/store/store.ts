@@ -282,6 +282,7 @@ export const assessmentStore = create<State & Actions>()(
       clearAssessment: () =>
         set(() => ({
           assessments: initialState.assessments,
+          formVals: initialState.formVals,
         })),
     }),
     { name: "cr-zustand", storage: createJSONStorage(() => sessionStorage) }
