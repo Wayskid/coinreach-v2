@@ -125,13 +125,16 @@ export default function Page() {
                   formVals.DOB.day.length < 2 ? "0" : ""
                 }${formVals.DOB.day}`
               )}
-              onChange={(value) =>
+              onChange={(value) => {
                 setFormVals("DOB", {
                   day: value.day.toString(),
                   month: value.month.toString(),
-                  year: value.year.toString(),
-                })
-              }
+                  year:
+                    value.year.toString().length === 4
+                      ? value.year.toString()
+                      : formVals.DOB.year,
+                });
+              }}
               isRequired
             />
           </div>
